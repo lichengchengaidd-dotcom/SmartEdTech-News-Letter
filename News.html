@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartEdTech - Career Journey Survey & Paris Events</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Coda&family=Hedvig+Letters+Sans&family=Jersey+15&family=Jersey+20+Charted&family=Liter&family=Luckiest+Guy&family=Oranienbaum&family=Press+Start+2P&family=Quattrocento+Sans&family=Sorts+Mill+Goudy&family=Unna&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdmirror.com/npm/mathjax@3.2.2/es5/tex-svg.min.js"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-balance {
+                text-wrap: balance;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 py-4" style="font-family: 'Quattrocento Sans', sans-serif;">
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden">
+        
+        <!-- Hero Section -->
+        <div class="relative h-64 bg-gradient-to-r from-blue-600 to-blue-800 overflow-hidden">
+            <img src="hero_image.png" alt="SmartEdTech Community" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4" style="font-family: 'Quattrocento Sans', sans-serif;">
+                    SmartEdTech
+                </h1>
+                <p class="text-xl text-blue-100 max-w-2xl">
+                    Your Career Journey Matters - Join Us in Paris This Week
+                </p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="p-8 md:p-12">
+            
+            <!-- Greeting Section -->
+            <div class="mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4" style="font-family: 'Liter', serif;">
+                    Dear SmartEdTech Community,
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    We hope this message finds you all doing well. As part of our continuous effort to enhance the learning experience at SmartEdTech, we're reaching out to gather valuable insights from our current students and alumni regarding your internship and career journeys during and after your master's degree.
+                </p>
+            </div>
+
+            <!-- Survey Section -->
+            <div class="bg-blue-50 rounded-xl p-8 mb-8 border-l-4 border-blue-500">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <img src="survey_icon.png" alt="Survey" class="w-16 h-16 rounded-lg">
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-red-600 mb-4" style="font-family: 'Liter', serif;">
+                            <i class="fas fa-clipboard-list text-blue-600 mr-2"></i>
+                            Please Participate in Our Career Journey Survey
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed mb-6">
+                            Your feedback is crucial in helping us understand how we can better support our students in achieving their career goals and refining our programs to meet evolving industry standards.
+                        </p>
+                        <div class="bg-white rounded-lg p-4 mb-4">
+                            <p class="text-sm text-gray-600 mb-3">
+                                <i class="fas fa-clock text-blue-500 mr-2"></i>
+                                <strong>Time Required:</strong> Just 2 minutes of your valuable time
+                            </p>
+                            <p class="text-sm text-gray-600">
+                                <i class="fas fa-shield-alt text-green-500 mr-2"></i>
+                                <strong>Privacy:</strong> All responses are confidential and used solely for program improvement
+                            </p>
+                        </div>
+                        <a href="https://forms.gle/VrVHruhshZDPB6Yx9" 
+                           class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-md hover:shadow-lg">
+                            <i class="fas fa-external-link-alt mr-2"></i>
+                            Take the Survey Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events Section -->
+            <div class="bg-amber-50 rounded-xl p-8 mb-8 border-l-4 border-amber-500">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <img src="events_icon.png" alt="Events" class="w-16 h-16 rounded-lg">
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-amber-800 mb-4" style="font-family: 'Liter', serif;">
+                            <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
+                            Exclusive Events This Week in Paris
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed mb-6">
+                            Join us for two special opportunities to connect, network, and stay engaged with the SmartEdTech community right here in the heart of Paris!
+                        </p>
+                        
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <!-- Wednesday Event -->
+                            <div class="bg-white rounded-lg p-4 border border-amber-200">
+                                <div class="flex items-center mb-3">
+                                    <i class="fas fa-calendar-day text-amber-600 text-xl mr-3"></i>
+                                    <h4 class="font-bold text-gray-800">Wednesday</h4>
+                                </div>
+                                <p class="text-sm text-gray-600 mb-2">
+                                    <strong>Event:</strong> EducaTech Expo Visit
+                                </p>
+                                <p class="text-sm text-gray-600 mb-2">
+                                    <strong>Location:</strong> Paris, France
+                                </p>
+                                <p class="text-sm text-gray-600 mb-2">
+                                    <strong>Website:</strong> 
+                                    <a href="https://www.educatech-expo.com" class="text-blue-600 hover:underline">
+                                        www.educatech-expo.com
+                                    </a>
+                                </p>
+                                <div class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded-full inline-block">
+                                    FREE Badge Available
+                                </div>
+                            </div>
+
+                            <!-- Thursday Event -->
+                            <div class="bg-white rounded-lg p-4 border border-amber-200">
+                                <div class="flex items-center mb-3">
+                                    <i class="fas fa-users text-amber-600 text-xl mr-3"></i>
+                                    <h4 class="font-bold text-gray-800">Thursday</h4>
+                                </div>
+                                <p class="text-sm text-gray-600 mb-2">
+                                    <strong>Event:</strong> Smarties Reunion
+                                </p>
+                                <p class="text-sm text-gray-600 mb-2">
+                                    <strong>Location:</strong> Paris, France
+                                </p>
+                                <p class="text-sm text-gray-600 mb-3">
+                                    Connect with fellow alumni and current students
+                                </p>
+                                <a href="https://chat.whatsapp.com/IYYZ8N0SwwA87FV4aGGDI7" 
+                                   class="inline-flex items-center text-sm bg-green-600 text-white px-3 py-1 rounded-full hover:bg-green-700 transition-colors">
+                                    <i class="fab fa-whatsapp mr-1"></i>
+                                    Join WhatsApp Group
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-blue-100 rounded-lg p-4">
+                            <p class="text-sm text-blue-800">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                <strong>Great Opportunity:</strong> For those in Paris this week, don't miss these exclusive networking and learning opportunities with the SmartEdTech team and community!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summer School Section -->
+            <div class="bg-emerald-50 rounded-xl p-8 mb-8 border-l-4 border-emerald-500">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <img src="summer_school_icon.png" alt="Summer School" class="w-16 h-16 rounded-lg">
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-emerald-800 mb-4" style="font-family: 'Liter', serif;">
+                            <i class="fas fa-sun text-emerald-600 mr-2"></i>
+                            Summer School 2026 - Guadalajara, Mexico
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            We're excited to announce our upcoming Summer School program next July in the beautiful city of Guadalajara, Mexico! This is a fantastic opportunity to enhance your learning experience while immersing yourself in Mexican culture.
+                        </p>
+                        <div class="bg-white rounded-lg p-4 mb-4">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">
+                                        <i class="fas fa-map-marker-alt text-emerald-500 mr-2"></i>
+                                        <strong>Location:</strong> Guadalajara, Mexico
+                                    </p>
+                                    <p class="text-sm text-gray-600">
+                                        <i class="fas fa-calendar text-emerald-500 mr-2"></i>
+                                        <strong>When:</strong> July 2026
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">
+                                        <i class="fas fa-clock text-emerald-500 mr-2"></i>
+                                        <strong>Status:</strong> Planning in Progress
+                                    </p>
+                                    <p class="text-sm text-gray-600">
+                                        <i class="fas fa-users text-emerald-500 mr-2"></i>
+                                        <strong>Format:</strong> In-person Learning
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            We're still in the planning stages, and we'd love to hear from you if you're interested in joining us for this exciting educational experience. Your input will help us shape the program to meet your needs and interests.
+                        </p>
+                        <button onclick="alert('If you are interested, please send us an email at msc-edtech@univ-cotedazur.fr');" 
+                                class="inline-flex items-center px-6 py-3 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-colors duration-200 shadow-md hover:shadow-lg">
+                            <i class="fas fa-envelope mr-2"></i>
+                            Express Your Interest
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Direct Contact Section -->
+            <div class="bg-gray-50 rounded-xl p-8 mb-8">
+                <h3 class="text-xl font-bold text-gray-800 mb-4" style="font-family: 'Liter', serif;">
+                    <i class="fas fa-comments text-blue-500 mr-2"></i>
+                    We Welcome Your Direct Input
+                </h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Beyond the survey, we warmly welcome you to reach out to us directly to share your experiences, suggestions, or any challenges you've faced. Your direct input is invaluable and greatly appreciated.
+                </p>
+                <p class="text-gray-700 leading-relaxed mt-4">
+                    Don't hesitate to contact us if you have any questions about the survey, upcoming events in Paris, summer school, or our programs.
+                </p>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-8 text-center text-white">
+                <h3 class="text-2xl font-bold mb-4" style="font-family: 'Liter', serif;">
+                    Your Insights Shape Our Future
+                </h3>
+                <p class="text-blue-100 mb-6 text-lg">
+                    Thank you for your time and valuable contribution. Your insights will play a key role in shaping the future of the SmartEdTech Master's Program.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://forms.gle/VrVHruhshZDPB6Yx9" 
+                       class="inline-flex items-center justify-center px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200 shadow-md">
+                        <i class="fas fa-poll mr-2"></i>
+                        Complete Survey
+                    </a>
+                    <a href="https://chat.whatsapp.com/E9dcYJg7RaqCEaM9uvOH5L" 
+                       class="inline-flex items-center justify-center px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors duration-200 shadow-md">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        Join Community
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="mt-8 pt-6 border-t border-gray-200 text-center">
+                <p class="text-gray-500 text-sm">
+                    SmartEdTech Team | Building Tomorrow's Educational Leaders
+                </p>
+                <p class="text-gray-400 text-xs mt-2">
+                    This message was sent to our valued SmartEdTech community members
+                </p>
+            </div>
+        </div>
+    </div>
+<script>
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+            e.preventDefault();
+        }
+    });
+</script>
+</body>
+</html>
